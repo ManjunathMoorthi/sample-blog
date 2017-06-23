@@ -8,8 +8,11 @@
 <div class='col-md-4'>
 </div>
 <div class='col-md-4'>
-<button type='button' class="btn btn-lg btn-primary">Sign In</button>
-<button type='button' class="btn btn-lg btn-default">Sign Up</button>
+<button type=button class="btn btn-lg btn-primary" (click)="onClick1();">Sign In</button>
+<button type=button class="btn btn-lg btn-default" (click)="onClick2();">Sign Up</button>
+</div>
+<div class="outer-outlet">
+<router-outlet></router-outlet>
 </div>
 </div>
 <h1>{{heading}}</h1>
@@ -18,5 +21,3 @@
 <button type='button' class='btn btn-lg btn-warning'>WRITE BLOG</button>
 </div>
 </div>
-
-
